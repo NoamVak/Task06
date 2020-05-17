@@ -11,16 +11,18 @@ import android.widget.Switch;
 import android.widget.ToggleButton;
 
 public class MainActivity extends AppCompatActivity {
+
     ToggleButton tb;
-    Button click;
     Switch sw;
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
-        click=(Button)findViewById(R.id.click);
+
         tb=(ToggleButton)findViewById(R.id.tb);
         sw=(Switch)findViewById(R.id.sw);
+
     }
     public void setMyScreenColor(int color){
         View view= this.getWindow().getDecorView();
